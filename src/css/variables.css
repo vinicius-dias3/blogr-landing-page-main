@@ -1,0 +1,11 @@
+:root{
+    --heading-color: hsl(208, 49%, 24%);
+    --hover-bg: hsl(355, 100%, 74%);
+    --gradient-1: hsl(13, 100%, 72%);
+    --gradient-2: hsl(353, 100%, 62%);
+    --gradient-3: hsl(237, 17%, 21%);
+    --gradient-4: hsl(237, 23%, 32%);
+    --text-color1: hsl(207, 13%, 34%);
+    --text-color2: hsl(240, 2%, 79%);
+    --footer-bg: hsl(240, 10%, 16%);
+}
