@@ -1,0 +1,95 @@
+@media (max-width: 425px){
+    .header nav .item{
+        display: none;
+    }
+
+    .header .container-bottom h1{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 850px){
+    .header{
+        padding: 10px 30px;
+    }
+
+    .header nav{
+        gap: 0;
+    }
+
+    .header .container-bottom h1{
+        font-size: 2.2em;
+    }
+
+    .header .container-bottom h3{
+        font-size: .9em;
+    }
+
+    .section-1 img{
+        width: 530px;
+        position: absolute;
+        right: -175px;
+        top: 0px;
+    }
+    
+    .section-1 .content-text{
+        width: 46%;
+        margin-top: 2em;
+        margin-left: 0em;
+        justify-content: flex-start;
+    }
+
+    .section-2{
+        height: 250px;
+    }
+
+    .section-2 img{
+    height: 350px;
+    }
+
+    .section-2 .content-text{
+        width: 47%;
+        color: white;
+    }
+    
+    .section-2 .content-text h2{
+        margin-bottom: .8em;
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+
+    .section-3{
+        height: 550px;
+        margin-top: 1em;
+    }
+
+    .section-3 .image{
+        height: 450px;
+    }
+
+    .section-3 .content-text{
+        width: 45%;
+        margin-right: 4em;
+    }
+
+    .footer{
+        gap: 20px;
+        padding: 40px 15px 30px;
+    }
+
+    .footer nav .group{
+        gap: 30px;       
+    }
+
+}
+
+
+@media (max-width: 1200px){
+    .footer{
+        gap: 100px;
+    }
+
+    .footer nav .group{
+        gap: 120px;
+    }
+}

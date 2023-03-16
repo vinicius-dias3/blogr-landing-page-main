@@ -29,64 +29,101 @@ body{
     align-items: center;
 }
 
+.header .container-top a img{
+    transition: .1s ease;
+}
+
+.header .container-top a img:hover{
+    transform: scaleX(1.1);
+}
+
 .header nav{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    margin-left: 4em;
+    gap: 20px;
 }
 
-.header nav ul{
-    display: flex;
-    align-items: center;
-}
-
-.header nav a{
-    color: white;
-    padding: 15px;
-}
-
-.header nav .title{
+.header nav .item{
     position: relative;
 }
 
-.header nav .title > a::after{
-    content: url(../images/icon-arrow-light.svg);
-    margin-left: 5px;
+.header nav .item > a{
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--text-color2);
+    padding: 2px 5px;
+    display: inline-block;
+    width: 120px;
+    align-self: center;
+    transition: .3s ease;
 }
 
-.header .title ul{
+.header nav .item > a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.header nav .item > a::after{
+    display: inline-block;
+    content: url(../images/icon-arrow-light.svg);
+    margin-left: 4px;
+    position: absolute;
+    top: 0;
+    transition: .3s ease;
+}
+
+.header nav .item > a:hover::after{
+    transform: rotate(180deg);
+    top: 6px;
+}
+
+.header nav .item a{
+    color: #fff;
+}
+
+.header nav .item ul{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -14px;
+    background-color: #eee;
+    margin-left: 5px;
+    width: 120px;
+    padding: 12px 10px;
+    border-radius: 6px;
+}
+
+.header nav .item:hover ul{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.863);
-    padding: 10px;
 }
 
-.header .title ul{
-    display: none;
-}
-
-/* TERMINAR DE FAZER A BARRA */
-
-.header .title ul a{
-    color: #242424;
+.header nav .item ul li a{
+    color: var(--text-color1);
     display: block;
-    padding: 8px 10px;
+    padding: 5px;
+    font-size: 1em;
 }
 
-.header .title ul a:hover{
+.header nav .item ul li a:hover{
     font-weight: 500;
 }
 
-.header .title:hover ~ ul{
-    display: block;
+.header .acesso{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.header .acesso .login{
+    color: white;
 }
 
 .header .acesso .sign-up{
     background-color: white;
-    color: #ff6f6c;
+    color: var(--hover-bg);
     padding: 10px 20px;
     border-radius: 25px;
     transition: .2s ease;
@@ -137,14 +174,14 @@ body{
 
 
 .header .container-bottom .learn-more{
-    background-color: #ff6f6c;
+    background-color: var(--hover-bg);
     border: 1px solid white;
     color: white;
     transition: .2s ease;
 }
 
 .header .container-bottom .learn-more:hover{
-    color: #FF6663;
+    color: var(--hover-bg);
     background-color: white;
 }
 
@@ -263,10 +300,9 @@ body{
     border: 1px solid transparent;
     border-top-right-radius: 85px;
     display: flex;
-    align-items: center;
     gap: 200px;
     height: 250px;
-    padding: 20px 100px;
+    padding: 40px 100px 20px;
 }
 
 .footer nav a{
@@ -282,6 +318,7 @@ body{
     display: block;
     font-weight: 700;
     margin-bottom: 1.6em;
+    color: white;
 }
 
 .footer nav .mini-group li{
