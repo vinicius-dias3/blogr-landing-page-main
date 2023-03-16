@@ -37,103 +37,6 @@ body{
     transform: scaleX(1.1);
 }
 
-.header nav{
-    display: flex;
-    width: 100%;
-    margin-left: 4em;
-    gap: 20px;
-}
-
-.header nav .item{
-    position: relative;
-}
-
-.header nav .item > a{
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: var(--text-color2);
-    padding: 2px 5px;
-    display: inline-block;
-    width: 120px;
-    align-self: center;
-    transition: .3s ease;
-}
-
-.header nav .item > a:hover{
-    text-decoration: underline;
-    color: white;
-}
-
-.header nav .item > a::after{
-    display: inline-block;
-    content: url(../images/icon-arrow-light.svg);
-    margin-left: 4px;
-    position: absolute;
-    top: 0;
-    transition: .3s ease;
-}
-
-.header nav .item > a:hover::after{
-    transform: rotate(180deg);
-    top: 6px;
-}
-
-.header nav .item a{
-    color: #fff;
-}
-
-.header nav .item ul{
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: -14px;
-    background-color: #eee;
-    margin-left: 5px;
-    width: 120px;
-    padding: 12px 10px;
-    border-radius: 6px;
-}
-
-.header nav .item:hover ul{
-    display: flex;
-    flex-direction: column;
-}
-
-.header nav .item ul li a{
-    color: var(--text-color1);
-    display: block;
-    padding: 5px;
-    font-size: 1em;
-}
-
-.header nav .item ul li a:hover{
-    font-weight: 500;
-}
-
-.header .acesso{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-left: auto;
-}
-
-.header .acesso .login{
-    color: white;
-}
-
-.header .acesso .sign-up{
-    background-color: white;
-    color: var(--hover-bg);
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: .2s ease;
-}
-
-.header .acesso .sign-up:hover{
-    color: white;
-    background-color: var(--hover-bg);
-}
-
 .header .container-bottom{
     text-align: center;
     margin-top: 4.3em;
@@ -187,8 +90,8 @@ body{
 
 .section-1{
     background-color: whitesmoke;
-    padding: 5em 0 1em 0;
-    padding-left: 4em;
+    padding: 5em 0 1em 4em;
+    /* padding-left: 4em; */
     height: 700px;
 }
 
@@ -224,7 +127,7 @@ body{
 }
 
 .section-1 .content-text p{
-    line-height: 21px;
+    line-height: 24px;
     color: var(--text-color1);
 }
 
