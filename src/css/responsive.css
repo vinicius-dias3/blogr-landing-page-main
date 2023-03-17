@@ -1,11 +1,19 @@
 
 @media (max-width: 425px){
-    .header nav .item{
+    .header nav{
         display: none;
     }
 
     .header .container-bottom h1{
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+
+    .header .container-bottom h3{
+        font-size: 1.1em;
+    }
+
+    .header .container-bottom a{
+        padding: 10px;
     }
 
     .section-1{
